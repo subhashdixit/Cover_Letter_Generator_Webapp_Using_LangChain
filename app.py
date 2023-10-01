@@ -12,6 +12,27 @@ chat_model_dict = {
 }
 
 def build_streamlit_app():
+
+    st.set_page_config(
+        page_title="Your Page Title",
+        page_icon="✅",
+        layout="wide",
+        initial_sidebar_state="expanded",
+    )
+
+    # Specify the static directory
+    st.markdown(
+        """
+        <style>
+        .reportview-container {
+            background: url('static/background_image.jpg');
+            background-size: cover;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     # Set the title of the Streamlit app to 'Cover Letter Generator'
     st.title('Cover Letter Generator using LangChain')
 
