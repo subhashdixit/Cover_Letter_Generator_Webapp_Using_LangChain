@@ -1,4 +1,5 @@
 fitz
+tools
 frontend
 PyMuPDF
 nbformat==4.2.0

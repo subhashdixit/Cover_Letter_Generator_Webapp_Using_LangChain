@@ -1,13 +1,14 @@
+import streamlit as st
 
-    st.set_page_config(
+st.set_page_config(
         page_title="Your Page Title",
         page_icon="✅",
         layout="wide",
         initial_sidebar_state="expanded",
     )
 
-    # Specify the static directory
-    st.markdown(
+# Specify the static directory
+st.markdown(
         """
         <style>
         .reportview-container {
