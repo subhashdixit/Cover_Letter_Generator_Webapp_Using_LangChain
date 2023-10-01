@@ -14,6 +14,7 @@ chat_model_dict = {
 def build_streamlit_app():
     # Set the title of the Streamlit app to 'Cover Letter Generator'
     st.title('Cover Letter Generator using LangChain')
+    st.text("Please provide at least one of the following pieces of information to generate the cover letter")
 
     # # Create an input box in the sidebar of the app for the OpenAI API key
     openai_api_key = None

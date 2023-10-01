@@ -1,7 +1,6 @@
-fitz
 tools
+PyPDF2 == 3.0.1
 frontend
-PyMuPDF
 nbformat==4.2.0
 ipykernel
 aiohttp==3.8.4

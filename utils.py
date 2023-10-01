@@ -1,6 +1,8 @@
 from docx import Document
 import fitz  # PyMuPDF
 import os
+import PyPDF2
+
 
 def write_string_to_word(text, filename):
     doc = Document()
@@ -12,11 +14,13 @@ def read_docx(file):
     text = ' '.join([paragraph.text for paragraph in doc.paragraphs])
     return text
 
-def read_pdf(file_path):
-    doc = fitz.open(file_path)
+def read_pdf(uploaded_file):
     text = ''
-    for page_number in range(doc.page_count):
-        page = doc[page_number]
-        text += page.get_text()
+    pdf_reader = PyPDF2.PdfReader(uploaded_file)
+    num_pages = len(pdf_reader.pages)
+
+    for page_number in range(num_pages):
+        page = pdf_reader.pages[page_number]
+        text += page.extract_text()
 
     return text
