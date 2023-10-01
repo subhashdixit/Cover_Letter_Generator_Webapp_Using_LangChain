@@ -183,3 +183,4 @@ cython_debug/
 
 # Ignore API key file because it is sensitive information
 secret_key.py
+*.pdf
