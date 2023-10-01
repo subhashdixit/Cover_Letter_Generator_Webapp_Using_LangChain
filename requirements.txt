@@ -1,4 +1,4 @@
-fitz == 1.23.4
+fitz
 frontend
 PyMuPDF
 nbformat==4.2.0
