@@ -30,8 +30,7 @@ def build_streamlit_app():
     model = st.sidebar.selectbox(
         'Select the model you wish to use',
         (
-            'gpt-3.5-turbo',
-            'gpt-4'
+            'gpt-3.5-turbo'
         )
     )
     
