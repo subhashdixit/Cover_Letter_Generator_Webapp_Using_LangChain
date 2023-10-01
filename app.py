@@ -3,7 +3,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from llm_chain import get_cover_letter_langchain_normal_prompts
 from utils import read_docx, write_string_to_word, read_pdf
-from secret_key import OPEN_API_KEY
+# from secret_key import OPEN_API_KEY
 
 load_dotenv()
 

@@ -6,7 +6,7 @@ from langchain.prompts import SystemMessagePromptTemplate, HumanMessagePromptTem
 from langchain.schema import SystemMessage, HumanMessage
 
 from prompts import system_prompt, user_information
-from secret_key import OPEN_API_KEY
+# from secret_key import OPEN_API_KEY
 from utils import read_pdf
 
 def get_cover_letter_langchain_normal_prompts(
