@@ -1,5 +1,7 @@
 # Cover Letter Genrator Webapp using LangChain
 
+**Streamlit app:** https://cover-letter-generator-using-langchain.streamlit.app/
+
 ## How to Use:
 1. Create your own OpenAI API Key.
 2. Choose the method for generating your cover letter.
